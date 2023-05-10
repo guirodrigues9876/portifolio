@@ -17,6 +17,22 @@
     font-size: 62.5%;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--dark2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark3);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--dark4);
+}
 
 
 body{
@@ -210,4 +226,29 @@ footer > div{
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+}
+
+#my-projects-list{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-projects-list a{
+    text-decoration: none;
+    color: var(--dark3);
+}
+
+
+#my-projects-list a:hover{
+    color: var(--dark5);
+    transition: .4s;
+    cursor: pointer;
+}
+
+:is(.img-profile, who-am-i){
+    box-shadow: 1px 1px 1px 1px var(--cyan1);
 }
