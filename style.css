@@ -14,24 +14,6 @@
 
     font-size: 62.5%;
 }
-/* 
-::-webkit-scrollbar{
-    width: 10px;
-}
-
-::-webkit-scrollbar-track{
-    background: var(--dark2);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--dark3);
-    border-radius: 1rem;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background: var(--dark4);
-} */
-
 
 body{
     background-color: var(--black);
@@ -77,7 +59,6 @@ nav{
 main{
     display:flex;
     flex-direction: column;
-    gap: 2rem;
 }
 
 section{
@@ -135,7 +116,7 @@ strong{
 .second-section{
     display: flex;
     flex-direction: column;
-    height: 997px;
+    height: 497px;
     gap: 4.8rem;
     padding: 6.4rem;
     align-items: center;
@@ -153,34 +134,9 @@ strong{
     text-align: center;
 }
 
-/* .second-section, .fourth-section{
-    background-color: var(--dark2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-} */
-
-.second-section ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.second-section ul li{
-    color: var(--dark4);
-    letter-spacing: .2rem;
-    font-weight: bold;
-}
-
-.second-section ul li:hover{
-    color: var(--dark5);
-    transition: .4s;
-    cursor: default;
+.third-section{
+    width: 100%;
+    background-color: var(--gray);
 }
 
 .title{
@@ -190,62 +146,31 @@ strong{
 .third-section{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
 }
 
 .third-section > div{
     display: flex;
-    gap: 4rem;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
+    padding: 5rem;
+    border-radius: 3rem;
+
+    background-color: var(--black);
 }
 
-.third-section > div img{
-    width: 25rem;
-    border-radius: 10px;
+.education > h2{
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
 }
 
-.third-section > div p{
-    max-width: 60rem;
-    color: var(--white);
-    text-align: justify;
+.education > ul >li span{
+    font-weight: 600;
 }
 
-footer{
-    padding: 4rem;
+.education > ul >li{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-}
-
-footer > div{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-#my-projects-list{
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-
-#my-projects-list a{
-    text-decoration: none;
-    color: var(--dark3);
-}
-
-#my-projects-list a:hover{
-    color: var(--dark5);
-    transition: .4s;
-    cursor: pointer;
-}
-
-:is(.img-profile, who-am-i){
-    box-shadow: 1px 1px 1px 1px var(--cyan1);
-}
+    gap: 1rem;
+}   
